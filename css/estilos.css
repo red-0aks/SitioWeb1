@@ -1,0 +1,251 @@
+body {
+    font: 15px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos Globales */
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.boton1 {
+    height: 38px;
+    background-color: #e44d26;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+/* Encabezado */
+
+header {
+    background-color: #2f343f;
+    color:#fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #438be0;
+}
+
+header a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #marca {
+    float: left;
+    width: auto;
+}
+
+header #marca h1{
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .resaltado, header .actual a{
+    color: #438be0;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #ccc;
+}
+
+/* Cabecera con imagen */
+#cabecera {
+    min-height: 400px;
+    background: url('../img/cabecera.jpg') 0 -400px;
+    text-align: center;
+    color: #fff;
+}
+
+#cabecera h1 {
+    margin-top: 100px;
+    font-size: 55px;
+}
+
+#cabecera p {
+    font-size: 20px;
+}
+
+/* Boletin */
+#boletin {
+    padding: 15px;
+    color: #fff;
+    background: #2f343f;
+}
+
+#boletin h1{
+    float: left;
+}
+
+#boletin form {
+    float: right;
+    margin-top: 15px;
+}
+
+#boletin input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+#boletin button {
+    font-size: 18px;
+}
+
+/* Cajas */
+#cajas {
+    margin-top: 20px;
+}
+
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#cajas .caja img{
+    width: 90px;
+}
+
+/* Lateral */
+aside#lateral {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.oscuro {
+   padding: 15px; 
+   background-color: #2f343f;
+   color: #fff;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+/* Main-col*/
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Servicios */
+ul#servicios li{
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #b5b7b6;
+    margin-bottom: 5px;
+    background-color: #d1d1d1;
+}
+
+/* Footer y pie de pagina */
+
+footer {
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    background: #438be0;
+    
+}
+
+
+/* Formulario de contacto*/
+input, textarea {
+    width: 100%;
+    height: 35px;
+    border: 1 px solid gray;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"]{
+    background-color: #e44d26;
+    color: #fff;
+    border: 0;
+    margin-top: 10px;
+}
+
+/* Media Queries*/
+@media(max-width: 768px){
+    header #marca,
+    header nav,
+    header nav li,
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    header .contenedor{
+        width: 90%;
+    }
+    header nav {
+        margin-top: 50px;
+    }
+    header li {
+        display: inline;
+        padding: 0 5px 0 5px;
+    }
+
+    #boletin .boton1{
+       width: 100%;
+    }
+
+    #boletin h1{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #boletin button{
+        display: block;
+    }
+
+    #boletin form{
+        margin-top: 10px;
+    }
+
+    #boletin form input[type="email"]{
+        width: 100%;
+        margin: 5px;
+        
+    }
+    
+    input, textarea {
+        width: 98%;
+    }
+}
